@@ -3,7 +3,7 @@
  
 ## Directory Structure for gumstix
 
-    +-- home
+    /-- home
         +-- root
             |-- ethernet_setup.sh: setup script for ethernet [in scripts].
             |-- setup.sh: setup script for webcam and pwmservo.ko [in scripts].
