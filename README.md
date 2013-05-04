@@ -1,6 +1,35 @@
 # EC535 Laser Turret
+## Compilation Instructions
+As a note uvccapture, the V4L drivers and libjpeg are all given compiled for the gumstix boards and OS we were given.
 
- 
+### uvccapture
+
+Assumes jpeg-8b installed to $HOME/src/jpeg-8d. Rewrote makefile to make cross-compilation possible
+
+> make
+
+### V4L drivers
+
+>
+>
+>
+
+### jpeg-8d
+
+> $ ./configure --host=arm-linux  --prefix=$HOME/src/jpeg-8d
+> $ make  
+> $ make install  
+
+### pwmservo
+Standard kernel make file
+
+> $ make
+
+### imgProcessing
+
+Makefile was created to set CFLAGS, needed to static link against libstdc++ because it didn't seem to exist in the right version on the gumstix board.
+
+> $ make
 ## Directory Structure for gumstix
 
     /-- home
