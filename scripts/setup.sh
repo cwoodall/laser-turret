@@ -6,11 +6,11 @@
 # 
 # Sets up the following features:
 #   - WebCam (DONE)
-#   - Servo Motors (TODO)
+#   - Servo Motors (DONE)
 #
 # IMPORTANT !! Webcam MUST be plugged in. Takes 2 test images
 #              since there have traditionally been problems with
-#              the first image or two.
+#              the first image or two. This is for testing.
 #
 ##
 echo "Setting up WebCam"
