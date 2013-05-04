@@ -2,34 +2,43 @@
 ## Compilation Instructions
 As a note uvccapture, the V4L drivers and libjpeg are all given compiled for the gumstix boards and OS we were given.
 
-### uvccapture
+### lib/uvccapture
 
 Assumes jpeg-8b installed to $HOME/src/jpeg-8d. Rewrote makefile to make cross-compilation possible
 
 > make
 
-### V4L drivers
 
->
->
->
+### V4L drivers (lib/uvcvideo.tar.bz2)
 
-### jpeg-8d
+Worked out of the box. First need to untar
+
+
+> tar -xf uvcvideo.tar.bz2  
+> cd uvcvideo  
+> make
+
+
+### jpeg-8d (lib/jpeg-8d)
 
 > $ ./configure --host=arm-linux  --prefix=$HOME/src/jpeg-8d
 > $ make  
 > $ make install  
+
 
 ### pwmservo
 Standard kernel make file
 
 > $ make
 
+
 ### imgProcessing
 
 Makefile was created to set CFLAGS, needed to static link against libstdc++ because it didn't seem to exist in the right version on the gumstix board.
 
 > $ make
+
+
 ## Directory Structure for gumstix
 
     /-- home
