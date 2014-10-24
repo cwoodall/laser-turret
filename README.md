@@ -1,4 +1,4 @@
-# EC535 Laser Turret
+# Laser Turret
 ## Compilation Instructions
 As a note uvccapture, the V4L drivers and libjpeg are all given compiled for the gumstix boards and OS we were given.
 
